@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="EBaySuite" parallel="false" thread-count="1">
+    <listeners>
+        <listener class-name="ebay.automation.common.TestListener"/>
+
+    </listeners>
+
+    <test verbose="2" name="EBay SearchProduct" preserve-order="true">
+        <parameters>
+            <parameter name="devicename" value="Lenovo"/>
+            <parameter name="platformname" value="Android"/>
+            <parameter name="platformversion" value="6.0"/>
+
+            <parameter name="uname" value="test39884@gmail.com"/>
+            <parameter name="password" value="Test@123"/>
+            <parameter name="product" value="65-inch TV"/>
+
+        </parameters>
+
+        <classes>
+            <class name="ebay.automation.Ebay"/>
+        </classes>
+    </test>
+
+</suite>
